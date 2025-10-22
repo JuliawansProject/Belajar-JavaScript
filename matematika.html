@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = 1+2; //3 
+        document.writeln("<p> 1+ 2 =" + result + "</p>")
+        let originalResult = result //3
+        result = result - 1; 
+        document.writeln("<p>" + originalResult + "- 1 = " + result + "</p>")
+        originalResult = result; //2
+        result = result * 2; // 4
+        document.writeln("<p>"+ originalResult + " * 2 = " + result + "</p>")
+        
+        //augmented assigment
+        let hasil = 3+2; //3 
+        document.writeln("<p> 3 + 2 =" + hasil + "</p>")
+        let hasilOriginal = hasil //3
+        hasil -= 2; 
+        document.writeln("<p>" + hasilOriginal + " - 2 = " + hasil + "</p>")
+        hasilOriginal = hasil; //2
+        hasil *= 3; // 4
+        document.writeln("<p>"+ hasilOriginal + " * 3 = " + hasil + "</p>")
+
+        //operator unary
+        let hasilLagi = +1;
+        document.writeln("<p>" + hasilLagi + "</p>")
+        hasilLagi--; // hasilLagi = hasilLagi -1 -> 0
+        document.writeln("<p>" + hasilLagi + "</p>")
+        hasilLagi++ // hasilLagi = hasilLagi +1 -> 1
+        document.writeln("<p>" + hasilLagi + "</p>")
+        hasilLagi = -hasilLagi //-1
+        document.writeln("<p>" + hasilLagi + "</p>")
+        
+</script>
+</body>
+</html>

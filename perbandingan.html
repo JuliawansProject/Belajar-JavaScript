@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result = 5 == "5";
+        document.writeln("<p>" + result + "</p>")
+        result = 5 === "5";
+        document.writeln("<p>" + result + "</p>")
+        result = 5 > 10;
+        document.writeln("<p>" + result + "</p>")
+        result = 5  < 10;
+        document.writeln("<p>" + result + "</p>")
+         result = 5  >=  10;
+        document.writeln("<p>" + result + "</p>")
+         result = 5  <= 10;
+        document.writeln("<p>" + result + "</p>")
+         result = 5  != 10;
+        document.writeln("<p>" + result + "</p>")
+         result = 5  !== 10;
+        document.writeln("<p>" + result + "</p>")
+        document.writeln("<br>")
+        //operator logika
+        const nilaiUjian = 80;
+        const nilaiAbsensi = 70;
+        const lulusUjian = nilaiUjian > 75;
+        document.writeln(lulusUjian)
+        document.writeln("<br>")
+        const lulusAbsensi = nilaiAbsensi >75;
+        document.writeln(lulusAbsensi)
+        document.writeln("<br>")
+        const lulus = lulusUjian && lulusAbsensi
+         const aman = lulusUjian || lulusAbsensi
+       //document.writeln("<p>" + lulus + "</p>")
+       document.writeln(lulus)
+       document.writeln(aman)
+
+    </script>
+</body>
+</html>
