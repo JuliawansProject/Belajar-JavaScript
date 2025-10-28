@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //const orang = {}
+    //orang["nama"] = "panda"
+   // orang["alamat"] = "rumah"
+   // orang["umur"] = 20
+
+   //console.table(orang)
+   //document.writeln(orang)
+   //delete orang["umur"]
+   const orang = { 
+     nama: "panda",
+     alamat: "rumah",
+     umur: 29
+   }
+   document.writeln(orang) 
+
+   const person = {
+        nama : "panda",
+        alamat : "indonesia",
+        umur : 20
+   }
+   console.table(person)
+   delete person ["umur"]
+   console.table(person)
+   document.writeln(person) 
+
+
+
+   console.info(`Nama : ${orang.nama} `)
+   console.info(`alamat: ${orang.alamat}`)
+   console.info(`alamat: ${orang.umur}`)
+   document.writeln("<br>")
+   document.writeln(`Nama : ${person.nama}`)
+   document.writeln("<br>")
+   document.writeln(`alamat : ${person.alamat}`)
+   document.writeln("<br>")
+   document.writeln(`umur : ${person.umur}`)
+   
+   </script>
+ 
+</body>
+</html>
