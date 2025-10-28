@@ -7,11 +7,20 @@
 </head>
 <body>
     <script>
-        const examValue = 70
+        const examValue = 75
+        const nilaiTuntas = 75
+        if (examValue > nilaiTuntas){
+            document.writeln("<p>lulus</p>")
+        }else if(examValue >= nilaiTuntas) { 
+            document.writeln("<p>lumayan lah</p>")
+        }else{
+            document.writeln("<p>tidak lulus</p>")
+        }
         if (examValue > 80){
             document.writeln("<p>lulus</p>")
-        }
-        else (examValue < 80); {
+        }else if(examValue > 60) { 
+            document.writeln("<p>lumayan lah</p>")
+        }else{
             document.writeln("<p>tidak lulus</p>")
         }
     </script>
