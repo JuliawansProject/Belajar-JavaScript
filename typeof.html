@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let data = "mandi"
+        //if(typeof data === "number"){
+          //  alert("Number")
+        //} else if (typeof data === "string"){
+           // alert("string")
+         //} else if (typeof data === "boolean"){
+           // alert("boolean")
+         //} else if (typeof data === "object"){
+           // alert("object")
+         //}
+
+         //const typeData = typeof data
+         //document.writeln(`<p>${typeData}</p>`)
+        
+         //In operator
+         //const person = {
+        //    firstName : "panda",
+         //   lastName  : "merah"
+        // }
+        // const result = "firstName" in person;
+         //document.writeln(`<p>${result}</p>`)
+       //  if ("firstName" in person){
+         //   alert(`Hello bang`)
+       //  } else {
+       //     alert("Hallo")
+       //  }
+         //In operator undefined
+        // const person = {
+        //  LastName : undefined, 
+       //  }
+      
+        // const result = "LastName" in person 
+        // document.writeln(`<p>${result}</p>`)
+
+        // const names = [null,"beruang", nuil]
+        // const nameResult = 0 in names
+        // document.writeln(`<p>${nameResult}</p>`)
+         
+         //const student = {
+        //   firstName : "pandas",
+       //     middleName : undefined,
+        //    lastName : "merah"
+        // }
+       //  if("middleName" in student){
+        //    alert(`helo${student.middleName}`)  
+       //  }else{
+        //    alert("Hello Studnet")
+         //}
+
+         //Ternary Operator
+         const nilai = 80
+         
+         let ucapan
+         if(nilai>= 75){
+           ucapan = "Selamat anda lulus"
+         }else {
+           ucapan = "coba lagi"
+         }
+         document.writeln(`<p>${ucapan}</p>`)
+
+         ucapan = nilai > 75 ? "selamat anda lulus" : "silahkan coba lagi"
+         document.writeln(`<p>${ucapan}</p>`)
+
+         //Nullish Coalescing Operator
+         let parameter = "aku"
+         let data = parameter
+         if (data === undefined  || data == null){
+            data = "nilai default"
+         }
+         alert(data)
+         document.writeln(`<p>${data}</p`)
+         data = parameter ?? "Nilai Default"
+         document.writeln(`<p>${data}</p`)
+    </script>
+</body>
+</html>

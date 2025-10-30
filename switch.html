@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nilai = "A"
+        switch (nilai){
+            case "A":
+                document.writeln("<p>Lulus</p>")
+                break //agar berhenti
+            case "B":
+            case "C":
+                document.writeln("<p>Lulus deh</p>")
+                break
+            case "D":
+                document.writeln("<p>tidak Lulus</p>")
+                break
+            default:
+                document.writeln("<p>cie salah jurusan</p>")
+                break
+        }if(nilai === "A"){
+            document.writeln("<p>wih lulus ni ye</p>")
+        }else if (nilai === "B" || nilai === "C") {
+            document.writeln("<p>lulus ni</p>")
+        }else if (nilai === "D"){
+            document.writeln("<p>lulus</p>") 
+        }else {
+            document.writeln("<p>salah jurusan</p>")
+        }
+         
+        
+        
+    </script>
+</body>
+</html> 
