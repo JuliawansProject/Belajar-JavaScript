@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //For in
+      const person = {
+        firstname: "ahmad",
+        middlename: "gemoy",
+        lastname: "banget",
+      }
+      for (const property in person){
+        document.writeln(`<p>Property ${property} : ${person[property]}</p>`)
+      }
+      const names = ["panda", "merah", "Lucu"]
+      for(const index in names){
+        document.writeln(`<p>${index} : ${names[index]}</p>`)
+      }
+      //For Of
+      for (const name of names) {
+         document.writeln(`<p>${name}</p>`)
+      }
+      const fullName = "Panda merah lucu"
+       for (const character of fullName) {
+         document.writeln(`<p>${character}</p>`)
+      }
+    </script>
+  </body>
+</html>
