@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // //Global scope
+      // let counter = 0
+      // function hitme(){ //global scope function
+      //     counter++ //local scope hitme
+      // }
+      // hitme()
+      // hitme()
+      // hitme()
+      // hitme()
+      // document.writeln(counter)
+
+      // //LOCAL SCOPE
+      // function first(){
+      //     let firstVariable = "first"
+      //      document.writeln(firstVariable)
+      // }
+      // function second(){
+      //     let secondVariable = "Second"
+      //     document.writeln(secondVariable)
+      // }
+      // first()
+      // second()
+
+      // //global scope
+      // document.writeln(firstVariable) // error
+      // document.writeln(secondVariable) //error
+
+      //NEsted Function Scope
+      function first() {
+        let firstVariable = "First";
+        function second() {
+          document.writeln(firstVariable);  //local scope
+        }
+        second()
+      }
+      first()
+    </script>
+  </body>
+</html>

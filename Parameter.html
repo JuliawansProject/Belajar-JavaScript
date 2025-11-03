@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Parameter-Optional
+      // function sayHello(firstname, middleName, lastName){
+      //     console.log(firstname)
+      //     document.writeln(firstname)
+      //     console.log(middleName)
+      //     document.writeln(middleName)
+      //     console.log(lastName)
+      //     document.writeln(lastName)
+      // }
+      // sayHello()
+      // sayHello("Hello")
+      // sayHello("Hello","jonathan")
+      // sayHello("Hello","jonathan", "marzuki")
+
+      // //Parameter-Default
+      // function register(name, gender ="unknown"){
+      //     console.log(name)
+      //     document.writeln(name)
+      //     console.log(gender)
+      //     document.writeln(gender)
+      // }
+      // register("panda", "MALE <br>")
+      // register("budi <br>")
+      // register("joko", undefined, "<br>" )
+      //  register("joko", null, "<br>" )
+
+      //Parameter-Rest
+    //   function sum(name, ...data) {
+    //     let total = 0;
+    //     for (const item of data) {
+    //       total += item;
+    //     }
+    //     console.info(`Total ${name} is ${total}`);
+    //     document.writeln(`<p>Total ${name} is ${total}</p>`);
+    //   }
+    //   sum(`joko`, 2, 3, 4, 5, 6, 7, 8);
+    //   sum(`budi`, 9, 8, 3, 4, 2, 7, 1);
+    //   sum(`ari`, 2, 8, 9, 3, 4, 6, 7);
+
+    //   //Spread syntax
+    //   document.writeln("<p>Spread Syantax</p>");
+    //   const values = [10, 10, 10, 10, 10];
+    //   sum("Text",...values);
+
+    //Arguments Object
+    function oldSum(){
+        let total = 0
+        for (const item of arguments){
+            total += item
+        }
+        console.info(`Total is ${total }`)
+        document.writeln(`<p>Total is ${total}</p>`);
+    }
+    oldSum(1,2,3,4,5,6,7,8,9,10)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow dengan blkok
+        // const sayHello = (name) => {
+        //     const say = `Hello ${name}`
+        //     document.writeln(say)
+        // }
+        // sayHello("Panda")
+
+        //ARrow tanpa blok
+        // const sayHello = (name) => document.writeln(`Hello ${name}`)
+        // sayHello("panda <br>")
+
+        // // const sum =(first, second) => first + second
+
+
+        //BALIKAN FUNGSI DENGAN RETURN
+        // const sum = (first, second) => {
+        //     return first + second
+        // }
+        // document.writeln(sum(10,10))
+
+        //TAnpa kurung parameter
+        // const sayHello = name => document.writeln(`HEllo ${name}`)
+        // sayHello("panda")
+
+
+        //ARROW sebagai parameter
+        function giveMeName(callback) {
+            callback("panda")
+        }
+        giveMeName(name => document.writeln(`HEllo ${name}`))
+    </script>
+</body>
+</html>

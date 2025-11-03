@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        function sayHelloWorld(){
-            document.writeln("<p>Hello world</p>")
+      // function sayHelloWorld(){
+      //     document.writeln("<p>Hello world</p>")
+      // }
+      // sayHelloWorld() //memanggil function
+      // sayHelloWorld()
+
+      //Function Parameter
+      // function sayHello(firstname, lastName){  //membuat parameter
+      //     document.writeln(`<p>Helo ${firstname} ${lastName}</p>`)
+      // }
+      // sayHello("panda", "merah") //memanggil funtion dengan parameter
+      // sayHello("aku", "gemoy")
+
+      //Function return value satu
+      function sayHello(firstname, lastName) {
+        //membuat funtion dengan return value
+        const say = `hello ${firstname} ${lastName}`;
+        return say;
+      }
+      const result = sayHello("joko", "wi"); //panggil function untuk tangkap return
+      document.writeln(`<p> ${result}</p>`);
+
+      //Function return value lebih dari 1
+      function getFinalscore(value) {
+        if (value > 80) {
+          return "A";
+        } else if (value > 70) {
+          return "B";
+        } else if (value > 60) {
+          return "C";
+        } else if (value > 50) {
+          return "D";
+        } else {
+          return "E";
         }
-        sayHelloWorld()
-        sayHelloWorld()
+      }
+      const finalValue = getFinalscore(90)
+       document.writeln(`<p> ${finalValue}</p>`);
+
+       //Menghentikan eksekusi dengan return
+       function isContains(array, searchValue){
+            for (const element of array){
+                if(element === searchValue){
+                    return true
+                }
+            }    
+            return false       
+       }
+
+       console.info(isContains([1,2,3,4,5,6,7,8,9,10], 5))
+       const array = [1,2,3,4,5,6,7,8,9,10]
+       const search = 10
+       const found = isContains(array, search)
+       document.writeln(`<p> ${found}</p>`);
     </script>
-</body>
+  </body>
 </html>

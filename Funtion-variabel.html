@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Function di variabel
+      function sayHello(name) {
+        console.info(`Hello ${name}`);
+        document.writeln(`<p>Hello ${name}</p>`);
+      }
+      const say = sayHello;
+      sayHello("Joko");
+      say("Budi");
+
+      //Function di parameter
+      // let say = sayHello
+      function giveMeName(callback) {
+        callback("Joko"); //sayHello("Joko")
+      }
+      giveMeName(sayHello);
+      giveMeName(say);
+    </script>
+  </body>
+</html>
