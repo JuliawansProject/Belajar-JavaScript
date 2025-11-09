@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.writeln(this);
+      function sample() {
+        document.writeln(this);
+        function inner() {
+          document.writeln(this);
+        }
+        inner();//window
+      }
+      sample(); //wiindow
+
+      const person = {
+        name:"Panda",
+        sayHello: function(name){
+            document.writeln(this)
+        },
+        sayHello: function(value){
+            document.writeln(`Hello ${value} My Name is ${this.name}`)
+        }
+      }
+      person.sayHello("Joko") 
+      person.sayHello("Gibs")//object
+    </script>
+  </body>
+</html>
