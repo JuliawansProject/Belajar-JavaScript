@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //mengaaamnbil data di array
+      //   const names = ["Joko", "Panda", "Budi"];
+      //   const firstName = names[0];
+      //   const middleName = names[1];
+      //   const lastName = names[2];
+
+      //   document.writeln(firstName);
+      //   document.writeln(middleName);
+      //   document.writeln(lastName);
+
+      //destructing array
+      // const names = ["Joko", "Panda", "Budi", "Gibs", "Racoon"];
+      // const [firstName, middleName, lastName, ...others] = names;
+
+      // document.writeln(firstName);
+      // document.writeln(middleName);
+      // document.writeln(lastName);
+      // document.writeln(others);
+
+      // Mengambil data di object
+      // const person = {
+      //   firstName: "Joko",
+      //   lastName: "wiwiwi",
+      //   address: {
+      //     street: "Jalan jalan",
+      //     city:"DiY",
+      //     country:"Malaysia"
+      //   },
+      //   hobby: "Coding",
+      //   Chennel: "gaming"
+      // }
+      // const firstName = person.firstName
+      // const lastName = person.lastName
+      // document.writeln(person.firstName)
+
+      //Destructuring Object
+      // const person = {
+      //   firstName: "Joko",
+      //   lastName: "wiwiwi",
+      //   address: {
+      //     street: "Jalan jalan",
+      //     city: "DIY",
+      //     country: "Malaysia",
+      //   },
+      //   hobby: "Coding",
+      //   Channel: "gaming",
+      // };
+      // const { firstName, lastName, address, ...others } = person;
+      // document.writeln(person.firstName + "<br>");
+      // document.writeln(person.lastName + "<br>");
+      // document.writeln(person.address + "<br>");
+      // document.writeln(JSON.stringify(person.address) + "<br>");
+      // document.writeln(person.others + "<br>");
+      // document.writeln(JSON.stringify(others)) + "<br>";
+
+      //Destructuring Nested Object
+      // const person = {
+      //   firstName: "Joko",
+      //   lastName: "wiwiwi",
+      //   address: {
+      //     street: "Jalan jalan",
+      //     city: "DIY",
+      //     country: "Malaysia",
+      //   },
+      //   hobby: "Coding",
+      //   Channel: "gaming",
+      // };
+      // const {
+      //   firstName,
+      //   lastName,
+      //   address: { country, city, street },
+      //   ...others
+      // } = person;
+
+      // document.writeln(person.firstName + "<br>");
+      // document.writeln(person.lastName + "<br>");
+      // document.writeln(country + "<br>");
+      // document.writeln(city + "<br>");
+      // document.writeln(street + "<br>");
+      // document.writeln(JSON.stringify(others) + "<br>");
+
+      //destructing di function parameter (1)
+      // function displayPerson({ firstName, middleName, lastName }) {
+      //   //parameter
+      //   document.writeln(firstName); //argument
+      //   document.writeln(middleName); //argument
+      //   document.writeln(lastName); //argument
+      // }
+      // const person = {
+      //   firstName: "Joko",
+      //   middleName: "patrio",
+      //   lastName: "Sudirohusodo",
+      // };
+      // displayPerson(person);
+      // document.writeln("<br>");
+      // //destructing di function parameter (2)
+      // function sum([first, second]) {
+      //   return first + second;
+      // }
+      // document.writeln(sum([10, 10]) + "<br>");
+      // document.writeln(sum([20, 10]) + "<br>");
+
+      // //Default Value
+      // const names = ["Joko", "Kurnia"];
+      // const [firstName, middleName, lastName = "patrio"] = names; //default value pada lastName
+      // document.writeln(firstName + "<br>"); //argument
+      // document.writeln(middleName + "<br>"); //argument
+      // document.writeln(lastName + "<br>"); //argument
+
+      //Default Value destructing
+      // const person = {
+      //   firstName: "Joko",
+      //   lastName: "Sudirohusodo",
+      // };
+      // const { firstName, middleName = "patrio", lastName } = person; //default value pada lastName
+      // document.writeln(firstName + "<br>"); //argument
+      // document.writeln(middleName + "<br>"); //argument
+      // document.writeln(lastName + "<br>"); //argument
+
+      //Menggunakan nama Variabel Lain
+      const person = {
+        firstName: "Joko",
+        middleName: "Agus",
+        lastName: "Sudirohusodo",
+      };
+      const {
+        firstName: namaDepan,
+        middleName: namaTengah = "patrio",
+        lastName: namaBelakang,
+      } = person; //default value pada lastName
+      document.writeln(namaDepan + "<br>"); //argument
+      document.writeln(namaTengah + "<br>"); //argument
+      document.writeln(namaBelakang + "<br>"); //argument
+    </script>
+  </body>
+</html>
